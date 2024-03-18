@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOSMED PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<!-- NAVBAR  -->
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light sticky-top">
+    <div class="container-fluid"> 
+      <a class="navbar-brand" href="/">GRBG HOMEPAGE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/menu">Produk</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/order">Order</a>
+          </li> -->
+          <!-- DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sosmed
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://instagram.com">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://whatsapp.com">Whatsaap</a></li>
+            </ul>
+          </li>
+          <!-- DROPDOWN END -->
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!-- NAVBAR END -->
+
+<!-- DROPDOWN MENU -->
+      <div class="container-fluid text-light" style="height:50vh ;">
+        <div class="card" style="width: 18rem; cursor:pointer;" >
+          <img href="https://instagram.com" src="data:image/png;base64,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" class="card-img-top">
+          <div class="card-body">
+            <a href="https://instagram.com" class="btn btn-dark d-block">instagram</a>
+          </div>
+        </div>
+      </div>
+<!-- DROPDOWN MENU END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
